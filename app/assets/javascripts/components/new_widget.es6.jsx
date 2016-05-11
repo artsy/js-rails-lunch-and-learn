@@ -5,12 +5,16 @@ class NewWidget extends React.Component {
       type: 'POST',
       url: '/widgets',
       data: { widget: { name: this.refs.input.value } }
-    }).then(() => location.reload())
+    }).then(() => window.location.reload())
   }
 
   render() {
     return <form onSubmit={this.addNewWidget.bind(this)}>
-      <input placeholder='Enter a new widget name' ref='input' />
+      <input
+        placeholder='Enter a new widget name'
+        ref='input'
+        className='input'
+      />
       <button type='submit' >Submit</button>
     </form>
   }

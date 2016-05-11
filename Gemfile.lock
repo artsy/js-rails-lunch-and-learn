@@ -129,6 +129,10 @@ GEM
       execjs
       rails (>= 3.2)
       tilt
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
     rspec-core (3.4.4)
       rspec-support (~> 3.4.0)
     rspec-expectations (3.4.0)
@@ -198,6 +202,7 @@ DEPENDENCIES
   jquery-rails
   rails (= 4.2.6)
   react-rails
+  rspec
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
